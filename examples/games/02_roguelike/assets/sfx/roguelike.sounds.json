@@ -1,0 +1,30 @@
+{
+ "bus": "sfx",
+ "groups": {
+  "hit": {
+   "file": "hit.wav",
+   "variants": 2,
+   "pitch_jitter": 0.08,
+   "max_voices": 4
+  },
+  "kill": {
+   "file": "kill.wav",
+   "pitch_jitter": 0.05
+  },
+  "death": {
+   "file": "death.wav",
+   "pitch_jitter": 0,
+   "max_voices": 1
+  },
+  "stairs": {
+   "file": "stairs.wav",
+   "pitch_jitter": 0,
+   "max_voices": 1
+  },
+  "pickup": {
+   "file": "pickup.wav",
+   "pitch_jitter": 0.04,
+   "volume": 0.8
+  }
+ }
+}

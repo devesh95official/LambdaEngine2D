@@ -1,0 +1,33 @@
+{"prefabs": {
+  "player": {"tags": ["FadeRevealer"], "components": {
+    "Transform": {},
+    "Sprite": {"layer": 64},
+    "Animator": {"sheet": "sprites/player.json", "clip": "idle_down"},
+    "Shadow": {"radii": [7, 2.5], "offset": [0, -1], "color": [0, 0, 0, 70]},
+    "Light2D": {"color": [120, 110, 90, 255], "radius": 16, "intensity": 0.4, "offset": [0, -6]}}},
+  "wolf": {"components": {
+    "Transform": {},
+    "Sprite": {"layer": 64},
+    "Animator": {"sheet": "sprites/combat.json", "clip": "bhediya_idle_down"},
+    "Shadow": {"radii": [8, 2.5], "offset": [0, -1], "color": [0, 0, 0, 70]}}},
+  "lantern": {"components": {
+    "Transform": {},
+    "Sprite": {"layer": 64},
+    "Animator": {"sheet": "sprites/world.json", "clip": "diya_lit"},
+    "Light2D": {"color": [255, 200, 120, 255], "radius": 20, "intensity": 0.5, "flicker": 0.15, "seed": 7, "offset": [0, -8]}}},
+  "rock": {"components": {
+    "Transform": {},
+    "Sprite": {"layer": 64},
+    "Animator": {"sheet": "sprites/world.json", "clip": "rock_small"}}},
+  "tree": {"components": {
+      "Transform": {},
+      "Sprite": {"layer": 64},
+      "Animator": {"sheet": "sprites/world.json", "clip": "tree_saal_base"}},
+    "children": [{"prefab": "canopy", "offset": [0, -14]}]},
+  "canopy": {"components": {
+    "Transform": {},
+    "Sprite": {"layer": 64, "sort_offset": 14.01},
+    "Animator": {"sheet": "sprites/world.json", "clip": "tree_saal_top"},
+    "FadeOccluder": {"top": [-24, -48, 48, 48], "inset": 4, "faded_alpha": 0.35},
+    "SpriteFade": {"seconds": 0.25}}}
+}}

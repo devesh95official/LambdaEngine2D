@@ -1,0 +1,47 @@
+{
+ "bus": "sfx",
+ "groups": {
+  "coin": {
+   "files": [
+    "coin.wav"
+   ],
+   "volume": 0.6,
+   "max_voices": 2
+  },
+  "jump": {
+   "files": [
+    "jump.wav"
+   ],
+   "volume": 0.4,
+   "max_voices": 2
+  },
+  "stomp": {
+   "files": [
+    "stomp.wav"
+   ],
+   "volume": 0.7,
+   "max_voices": 2
+  },
+  "hurt": {
+   "files": [
+    "hurt.wav"
+   ],
+   "volume": 0.6,
+   "max_voices": 2
+  },
+  "checkpoint": {
+   "files": [
+    "checkpoint.wav"
+   ],
+   "volume": 0.6,
+   "max_voices": 2
+  },
+  "win": {
+   "files": [
+    "win.wav"
+   ],
+   "volume": 0.8,
+   "max_voices": 2
+  }
+ }
+}

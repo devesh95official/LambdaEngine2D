@@ -1,0 +1,6 @@
+{"monsters": [
+  {"prefab": "rat", "weight": 8, "min_depth": 1, "max_depth": 4},
+  {"prefab": "goblin", "weight": 6, "min_depth": 1, "max_depth": 8},
+  {"prefab": "orc", "weight": 4, "min_depth": 3, "max_depth": 99},
+  {"prefab": "troll", "weight": 2, "min_depth": 5, "max_depth": 99}
+]}

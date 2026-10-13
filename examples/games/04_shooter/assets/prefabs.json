@@ -1,0 +1,52 @@
+{"prefabs": {
+  "actor": {"components": {
+    "Transform": {}, "Velocity": {},
+    "Sprite": {"layer": 64},
+    "Shadow": {"radii": [5, 2]},
+    "Animator": {"sheet": "sprites/actors.json", "clip": "grunt"}}},
+
+  "player": {"extends": "actor", "tags": ["Player"], "components": {
+    "Collider": {"half": [4, 4], "offset": [0, -6], "layer": 2, "mask": 12},
+    "TopDownMotor": {"max_speed": 105, "accel": 1400, "decel": 1800, "corner_assist": 5, "solid_mask": 1},
+    "Health": {"hp": 5, "max_hp": 5},
+    "Weapon": {"fire_ticks": 9, "bullet_speed": 330},
+    "Animator": {"clip": "player"}}},
+
+  "enemy": {"extends": "actor", "components": {
+    "Collider": {"half": [5, 5], "offset": [0, -6], "layer": 4, "mask": 2},
+    "TopDownMotor": {"max_speed": 38, "accel": 500, "decel": 600, "corner_assist": 4, "solid_mask": 1},
+    "Health": {"hp": 2, "max_hp": 2},
+    "Enemy": {"kind": "grunt", "points": 10, "contact_damage": 1, "radius": 6}}},
+  "grunt": {"extends": "enemy", "components": {"Animator": {"clip": "grunt"}}},
+  "runner": {"extends": "enemy", "components": {
+    "TopDownMotor": {"max_speed": 66, "accel": 700},
+    "Health": {"hp": 1, "max_hp": 1},
+    "Enemy": {"kind": "runner", "points": 15, "radius": 5},
+    "Animator": {"clip": "runner", "speed": 1.6}}},
+  "brute": {"extends": "enemy", "components": {
+    "Transform": {"scale": [1.5, 1.5]},
+    "Collider": {"half": [8, 7], "offset": [0, -9]},
+    "TopDownMotor": {"max_speed": 26, "accel": 300},
+    "Health": {"hp": 12, "max_hp": 12},
+    "Enemy": {"kind": "brute", "points": 60, "contact_damage": 2, "radius": 10},
+    "Shadow": {"radii": [8, 3]},
+    "Animator": {"clip": "brute", "speed": 0.7}}},
+
+  "bullet": {"components": {
+    "Transform": {}, "Velocity": {},
+    "Projectile": {"radius": 2, "mask": 4, "pierce": 0, "stop_at_tiles": true},
+    "Lifetime": {"ticks": 50},
+    "Bullet": {"damage": 1},
+    "Sprite": {"layer": 64, "pivot": [0.5, 0.5]},
+    "Animator": {"sheet": "sprites/actors.json", "clip": "bullet"}}},
+
+  "pickup": {"components": {
+    "Transform": {},
+    "Collider": {"shape": "circle", "radius": 7, "layer": 8, "mask": 2, "trigger": true},
+    "Lifetime": {"ticks": 720},
+    "Sprite": {"layer": 64, "pivot": [0.5, 0.5]},
+    "Animator": {"sheet": "sprites/actors.json", "clip": "heart"}}},
+  "pickup_heart": {"extends": "pickup", "components": {"Pickup": {"kind": "heart"}, "Animator": {"clip": "heart"}}},
+  "pickup_rapid": {"extends": "pickup", "components": {"Pickup": {"kind": "rapid", "power_ticks": 600}, "Animator": {"clip": "rapid"}}},
+  "pickup_spread": {"extends": "pickup", "components": {"Pickup": {"kind": "spread", "power_ticks": 600}, "Animator": {"clip": "spread"}}}
+}}

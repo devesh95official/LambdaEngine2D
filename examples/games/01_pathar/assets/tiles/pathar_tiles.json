@@ -1,0 +1,78 @@
+{
+ "columns": 16,
+ "tile_size": 16,
+ "terrains": {
+  "village_ground": {
+   "base": [
+    0,
+    0,
+    1,
+    2
+   ],
+   "details": [
+    3,
+    4,
+    5
+   ],
+   "detail_percent": 7
+  },
+  "village_wall": {
+   "edges": 16
+  },
+  "ghat_ground": {
+   "base": [
+    32,
+    32,
+    33,
+    34
+   ],
+   "details": [
+    35,
+    36,
+    37
+   ],
+   "detail_percent": 7
+  },
+  "ghat_wall": {
+   "edges": 48
+  },
+  "pahad_ground": {
+   "base": [
+    80,
+    80,
+    81,
+    82
+   ],
+   "details": [
+    83,
+    84,
+    85
+   ],
+   "detail_percent": 7
+  },
+  "pahad_wall": {
+   "edges": 96
+  },
+  "ghat_water": {
+   "edges": 64,
+   "blends": [
+    "bridge"
+   ]
+  },
+  "bridge": {
+   "base": [
+    112
+   ]
+  },
+  "bridge_v": {
+   "base": [
+    113
+   ]
+  },
+  "slab": {
+   "base": [
+    114
+   ]
+  }
+ }
+}

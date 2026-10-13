@@ -1,0 +1,35 @@
+{"prefabs": {
+  "actor": {"components": {
+    "Transform": {}, "Sprite": {"layer": 64, "pivot": [0.5, 0.5]},
+    "GridPosition": {}, "GridMover": {"ticks": 6}, "TurnActor": {}}},
+  "player": {"extends": "actor", "tags": ["Player", "PlayerTurn"], "components": {
+    "Animator": {"sheet": "sprites/actors.json", "clip": "player"},
+    "Stats": {"hp": 30, "max_hp": 30, "attack": 4, "defense": 1},
+    "Inventory": {}, "AudioListener": {}}},
+  "monster": {"extends": "actor", "tags": ["FloorLocal"]},
+  "rat": {"extends": "monster", "components": {
+    "TurnActor": {"speed": 120}, "Animator": {"sheet": "sprites/actors.json", "clip": "rat"},
+    "Stats": {"hp": 4, "max_hp": 4, "attack": 2, "defense": 0, "xp": 1}, "Monster": {"name": "rat", "sight": 6}}},
+  "goblin": {"extends": "monster", "components": {
+    "Animator": {"sheet": "sprites/actors.json", "clip": "goblin"},
+    "Stats": {"hp": 8, "max_hp": 8, "attack": 3, "defense": 0, "xp": 3}, "Monster": {"name": "goblin", "sight": 8}}},
+  "orc": {"extends": "monster", "components": {
+    "TurnActor": {"speed": 90}, "Animator": {"sheet": "sprites/actors.json", "clip": "orc"},
+    "Stats": {"hp": 14, "max_hp": 14, "attack": 5, "defense": 1, "xp": 6}, "Monster": {"name": "orc", "sight": 8}}},
+  "troll": {"extends": "monster", "components": {
+    "TurnActor": {"speed": 70}, "Animator": {"sheet": "sprites/actors.json", "clip": "troll"},
+    "Stats": {"hp": 26, "max_hp": 26, "attack": 8, "defense": 2, "xp": 12}, "Monster": {"name": "troll", "sight": 7}}},
+  "floor_thing": {"tags": ["FloorLocal"], "components": {
+    "Transform": {}, "Sprite": {"layer": 63, "pivot": [0.5, 0.5]}, "GridPosition": {"blocks": false}}},
+  "potion_heal": {"extends": "floor_thing", "components": {
+    "Animator": {"sheet": "sprites/actors.json", "clip": "potion"}, "Item": {"def": "potion_heal"}}},
+  "scroll_lightning": {"extends": "floor_thing", "components": {
+    "Animator": {"sheet": "sprites/actors.json", "clip": "scroll"}, "Item": {"def": "scroll_lightning"}}},
+  "scroll_mapping": {"extends": "floor_thing", "components": {
+    "Animator": {"sheet": "sprites/actors.json", "clip": "scroll"}, "Item": {"def": "scroll_mapping"}}},
+  "scroll_teleport": {"extends": "floor_thing", "components": {
+    "Animator": {"sheet": "sprites/actors.json", "clip": "scroll"}, "Item": {"def": "scroll_teleport"}}},
+  "corpse": {"extends": "floor_thing", "components": {
+    "Sprite": {"layer": 62, "pivot": [0.5, 0.5]},
+    "Animator": {"sheet": "sprites/actors.json", "clip": "corpse", "playing": false}}}
+}}

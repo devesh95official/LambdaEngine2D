@@ -1,0 +1,384 @@
+{
+ "chapters": [
+  {
+   "english": "the courtyard",
+   "id": "aangan",
+   "levels": [
+    {
+     "english": "the first step",
+     "name": "Pehla Kadam",
+     "par": 3,
+     "pushes": 2,
+     "rows": [
+      "#######",
+      "#@ $ .#",
+      "#######"
+     ]
+    },
+    {
+     "english": "two stones",
+     "name": "Do Pathar",
+     "par": 19,
+     "pushes": 4,
+     "rows": [
+      "########",
+      "#  .   #",
+      "# $#$  #",
+      "#@ . ###",
+      "######  "
+     ]
+    },
+    {
+     "english": "the turn",
+     "name": "Mod",
+     "par": 7,
+     "pushes": 5,
+     "rows": [
+      "########",
+      "#      #",
+      "# @$   #",
+      "#### # #",
+      "   #  .#",
+      "   #####"
+     ]
+    },
+    {
+     "english": "the tulsi stand",
+     "name": "Tulsi Chaura",
+     "par": 34,
+     "pushes": 6,
+     "rows": [
+      "########",
+      "#@     #",
+      "#.##   #",
+      "#  $ # #",
+      "# $  . #",
+      "########"
+     ]
+    },
+    {
+     "english": "the well",
+     "name": "Kuan",
+     "par": 19,
+     "pushes": 10,
+     "rows": [
+      "#######",
+      "# $.  #",
+      "#  #  #",
+      "#    .#",
+      "##$# ##",
+      "#@$  .#",
+      "#######"
+     ]
+    },
+    {
+     "english": "the village square",
+     "name": "Chaupal",
+     "par": 31,
+     "pushes": 9,
+     "rows": [
+      "#########",
+      "#  .#   #",
+      "# @   $ #",
+      "### #.###",
+      "#.  $ $ #",
+      "#   #   #",
+      "#########"
+     ]
+    },
+    {
+     "english": "the lane",
+     "name": "Gali",
+     "par": 42,
+     "pushes": 8,
+     "rows": [
+      "  ######",
+      "###@ . #",
+      "# $ $# #",
+      "# #   .#",
+      "#.$ ####",
+      "#   #   ",
+      "#####   "
+     ]
+    },
+    {
+     "english": "the courtyard",
+     "name": "Aangan",
+     "par": 56,
+     "pushes": 12,
+     "rows": [
+      "##########",
+      "#   .#.  #",
+      "#       $#",
+      "##$##  # #",
+      "#    $$.@#",
+      "#   #   .#",
+      "##########"
+     ]
+    }
+   ],
+   "music": "saal_van_day",
+   "name": "Aangan",
+   "theme": "village"
+  },
+  {
+   "english": "the river steps",
+   "id": "ghat",
+   "levels": [
+    {
+     "english": "the first ripple",
+     "name": "Pehli Leher",
+     "par": 9,
+     "pushes": 6,
+     "rows": [
+      "#########",
+      "#@ $ ~ .#",
+      "# $     #",
+      "#       #",
+      "#########"
+     ]
+    },
+    {
+     "english": "the steps",
+     "name": "Seedhiyan",
+     "par": 24,
+     "pushes": 6,
+     "rows": [
+      "#########",
+      "#   ~   #",
+      "# $ ~$$ #",
+      "# @ #  .#",
+      "#########"
+     ]
+    },
+    {
+     "english": "two banks",
+     "name": "Do Kinare",
+     "par": 22,
+     "pushes": 8,
+     "rows": [
+      "#########",
+      "#   #  .#",
+      "#   ~$$ #",
+      "##=###~##",
+      "#@$ ~$  #",
+      "# $.#   #",
+      "#########"
+     ]
+    },
+    {
+     "english": "the ferry",
+     "name": "Naav",
+     "par": 20,
+     "pushes": 9,
+     "rows": [
+      "########",
+      "# $  . #",
+      "# # $# #",
+      "#~$~~$~#",
+      "#$   $@#",
+      "# . #  #",
+      "########"
+     ]
+    },
+    {
+     "english": "the bridges",
+     "name": "Pul",
+     "par": 29,
+     "pushes": 8,
+     "rows": [
+      "##########",
+      "# $  ~   #",
+      "#  # $   #",
+      "# $$$~.# #",
+      "#. @ ~   #",
+      "##########"
+     ]
+    },
+    {
+     "english": "the lotus pond",
+     "name": "Kamal",
+     "par": 52,
+     "pushes": 6,
+     "rows": [
+      "##########",
+      "#@   #   #",
+      "# $~=$~  #",
+      "# $~.$~  #",
+      "# $$~==  #",
+      "# $  .   #",
+      "##########"
+     ]
+    },
+    {
+     "english": "evening prayer",
+     "name": "Sandhya",
+     "par": 29,
+     "pushes": 9,
+     "rows": [
+      "##########",
+      "#   #.  @#",
+      "#$  $$#$$#",
+      "#==~~=~ ~#",
+      "#.  #  $ #",
+      "#   .$ # #",
+      "##########"
+     ]
+    },
+    {
+     "english": "the current",
+     "name": "Dhara",
+     "par": 37,
+     "pushes": 10,
+     "rows": [
+      "###########",
+      "#    ~    #",
+      "# # $~$ # #",
+      "#    #$.  #",
+      "# #.$~ $# #",
+      "#  $+~  $ #",
+      "###########"
+     ]
+    }
+   ],
+   "music": "chandni_ghat_day",
+   "name": "Ghat",
+   "theme": "ghat"
+  },
+  {
+   "english": "the mountain temple",
+   "id": "pahad",
+   "levels": [
+    {
+     "english": "the climb",
+     "name": "Chadhai",
+     "par": 43,
+     "pushes": 11,
+     "rows": [
+      "#########",
+      "#   #   #",
+      "#.$ #   #",
+      "#  $    #",
+      "## ###.##",
+      "# .   $@#",
+      "#########"
+     ]
+    },
+    {
+     "english": "the rock",
+     "name": "Chattaan",
+     "par": 49,
+     "pushes": 10,
+     "rows": [
+      "  ########",
+      "  # @    #",
+      "###.## # #",
+      "#    $  .#",
+      "#*#$#$ ###",
+      "#.     #  ",
+      "########  "
+     ]
+    },
+    {
+     "english": "the cave mouth",
+     "name": "Gufa Dwaar",
+     "par": 44,
+     "pushes": 15,
+     "rows": [
+      "##########",
+      "#  #   . #",
+      "#  #  # .#",
+      "#     #  #",
+      "### ###$ #",
+      "#  $     #",
+      "#   #. $@#",
+      "##########"
+     ]
+    },
+    {
+     "english": "the temple stair",
+     "name": "Mandir Seedhi",
+     "par": 61,
+     "pushes": 16,
+     "rows": [
+      "###########",
+      "#     #   #",
+      "#  # $    #",
+      "#  ###*##.#",
+      "# .     $@#",
+      "## #$ #  $#",
+      "#.    #  .#",
+      "###########"
+     ]
+    },
+    {
+     "english": "the peak",
+     "name": "Shikhar",
+     "par": 63,
+     "pushes": 13,
+     "rows": [
+      "###########",
+      "#    #   .#",
+      "# #$$ . # #",
+      "#   ###   #",
+      "# #   @$# #",
+      "# .  # $ .#",
+      "###########"
+     ]
+    },
+    {
+     "english": "the maze",
+     "name": "Bhool Bhulaiya",
+     "par": 68,
+     "pushes": 16,
+     "rows": [
+      "############",
+      "#  . #     #",
+      "#  #    # .#",
+      "#  ###### $#",
+      "#          #",
+      "##$ #$ #$ ##",
+      "#@$  .  . .#",
+      "############"
+     ]
+    },
+    {
+     "english": "the bell",
+     "name": "Ghanti",
+     "par": 83,
+     "pushes": 19,
+     "rows": [
+      "##########",
+      "#  @#    #",
+      "#    $$# #",
+      "##$##   .#",
+      "#    ## ##",
+      "#  #*    #",
+      "# .     .#",
+      "##########"
+     ]
+    },
+    {
+     "english": "the last door",
+     "name": "Antim Dwaar",
+     "par": 106,
+     "pushes": 20,
+     "rows": [
+      "############",
+      "#     #    #",
+      "# ## $ $ # #",
+      "#    # #   #",
+      "## #.   .#@#",
+      "#.   ##  $ #",
+      "#$ #    # $#",
+      "#.    #  *.#",
+      "############"
+     ]
+    }
+   ],
+   "music": "kaala_pahad_day",
+   "name": "Pahad",
+   "theme": "pahad"
+  }
+ ]
+}

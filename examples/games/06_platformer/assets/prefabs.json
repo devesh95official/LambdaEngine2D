@@ -1,0 +1,44 @@
+{"prefabs": {
+ "hero": {"tags": ["Player"], "components": {
+  "Transform": {}, "Velocity": {},
+  "Sprite": {"layer": 64},
+  "Collider": {"half": [5, 7], "offset": [0, -7], "layer": 4},
+  "PlatformerMotor": {"coyote_ticks": 6, "buffer_ticks": 6, "jump_cut": 0.5, "solid_mask": 1},
+  "Animator": {"sheet": "sprites/hero.json", "graph": "sprites/hero.anim.json", "clip": "idle"},
+  "AnimParams": {}, "MotorAnimBridge": {}, "PlayerState": {}}},
+ "slime": {"components": {
+  "Transform": {}, "Velocity": {},
+  "Sprite": {"layer": 64},
+  "Collider": {"half": [6, 5], "offset": [0, -5], "layer": 2},
+  "PlatformerMotor": {"run_speed": 30, "accel": 600, "jump_speed": 0, "solid_mask": 1},
+  "Animator": {"sheet": "sprites/slime.json", "clip": "walk"},
+  "Patrol": {"dir": -1}}},
+ "coin": {"tags": ["Coin"], "components": {
+  "Transform": {},
+  "Sprite": {"layer": 64, "pivot": [0.5, 0.5]},
+  "Collider": {"half": [5, 5], "trigger": true, "layer": 8, "mask": 4},
+  "Animator": {"sheet": "sprites/coin.json", "clip": "spin"}}},
+ "checkpoint": {"components": {
+  "Transform": {},
+  "Sprite": {"layer": 60},
+  "Collider": {"half": [6, 16], "offset": [0, -16], "trigger": true, "layer": 8, "mask": 4},
+  "Animator": {"sheet": "sprites/checkpoint.json", "clip": "off"},
+  "Checkpoint": {}}},
+ "goal": {"tags": ["Goal"], "components": {
+  "Transform": {},
+  "Sprite": {"layer": 60},
+  "Collider": {"half": [6, 16], "offset": [0, -16], "trigger": true, "layer": 8, "mask": 4},
+  "Animator": {"sheet": "sprites/goal.json", "clip": "wave"}}},
+ "lift": {"components": {
+  "Transform": {}, "Velocity": {},
+  "Sprite": {"region": {"texture": "sprites/lift.png", "source": [0, 0, 48, 8], "size": [48, 8]},
+             "pivot": [0.5, 0.5], "layer": 60, "flags": 0},
+  "Collider": {"half": [24, 4], "one_way": true, "layer": 1},
+  "MovingPlatform": {},
+  "PathFollower": {"speed": 32}}},
+ "crates": {"components": {
+  "Transform": {},
+  "Sprite": {"region": {"texture": "sprites/crates.png", "source": [0, 0, 16, 32], "size": [16, 32]},
+             "layer": 60, "flags": 0},
+  "Collider": {"half": [8, 16], "offset": [0, -16], "layer": 1}}}
+}}

@@ -1,0 +1,13 @@
+{
+ "columns": 16,
+ "image": "pathar_tiles.png",
+ "imageheight": 128,
+ "imagewidth": 256,
+ "margin": 0,
+ "name": "pathar_tiles",
+ "spacing": 0,
+ "tilecount": 128,
+ "tileheight": 16,
+ "tilewidth": 16,
+ "type": "tileset"
+}

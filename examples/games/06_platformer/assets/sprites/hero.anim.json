@@ -1,0 +1,62 @@
+{
+ "sheet": "hero.json",
+ "start": "idle",
+ "clips": [
+  {
+   "name": "idle"
+  },
+  {
+   "name": "run"
+  },
+  {
+   "name": "jump"
+  },
+  {
+   "name": "fall"
+  }
+ ],
+ "transitions": [
+  {
+   "from": "idle",
+   "to": "run",
+   "param": "speed",
+   "above": 12
+  },
+  {
+   "from": "run",
+   "to": "idle",
+   "param": "speed",
+   "below": 12
+  },
+  {
+   "from": "idle",
+   "to": "jump",
+   "param": "grounded",
+   "below": 0.5
+  },
+  {
+   "from": "run",
+   "to": "jump",
+   "param": "grounded",
+   "below": 0.5
+  },
+  {
+   "from": "jump",
+   "to": "fall",
+   "param": "vy",
+   "above": 0
+  },
+  {
+   "from": "fall",
+   "to": "idle",
+   "param": "grounded",
+   "above": 0.5
+  },
+  {
+   "from": "jump",
+   "to": "idle",
+   "param": "grounded",
+   "above": 0.5
+  }
+ ]
+}

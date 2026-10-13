@@ -1,0 +1,6 @@
+{"items": [
+  {"id": "potion_heal", "name": "healing potion", "effect": "heal", "power": 10, "weight": 6, "min_depth": 1},
+  {"id": "scroll_lightning", "name": "lightning scroll", "effect": "lightning", "power": 14, "weight": 3, "min_depth": 1},
+  {"id": "scroll_mapping", "name": "mapping scroll", "effect": "mapping", "power": 0, "weight": 2, "min_depth": 1},
+  {"id": "scroll_teleport", "name": "teleport scroll", "effect": "teleport", "power": 0, "weight": 2, "min_depth": 2}
+]}
