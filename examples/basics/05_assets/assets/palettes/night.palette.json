@@ -1,0 +1,9 @@
+{
+  "name": "night",
+  "base": "base.palette.json",
+  "colors": {
+    "sky": "#0b1a3a",
+    "grass": "#1e4d2b",
+    "moon": "#e8e8f0"
+  }
+}

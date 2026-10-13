@@ -1,0 +1,7 @@
+{"prefabs": {"hero": {"components": {
+  "Transform": {}, "Velocity": {},
+  "Sprite": {"layer": 64},
+  "Collider": {"half": [5, 7], "offset": [0, -7]},
+  "PlatformerMotor": {},
+  "Animator": {"sheet": "sprites/hero.json", "graph": "sprites/hero.anim.json", "clip": "idle"},
+  "AnimParams": {}, "MotorAnimBridge": {}}}}}

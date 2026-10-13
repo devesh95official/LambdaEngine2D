@@ -1,0 +1,15 @@
+{
+  "font_size": 8,
+  "text": "#f0f0f0",
+  "text_disabled": "#787878",
+  "panel": [40, 44, 64, 235],
+  "panel_border": [120, 128, 170],
+  "button": [64, 70, 100],
+  "button_focus": [104, 116, 190],
+  "button_down": [30, 32, 48],
+  "nine_slice": {"image": "panel.png", "rect": [0, 0, 12, 12], "border": 3},
+  "classes": {
+    "title": {"text": "#ffd75e", "background": false, "align": "center"},
+    "hint": {"text": "#9aa4c8", "background": false}
+  }
+}

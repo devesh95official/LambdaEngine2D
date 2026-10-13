@@ -1,0 +1,13 @@
+{
+  "capacity": 256,
+  "rate": 70,
+  "speed_min": 12, "speed_max": 34,
+  "angle": -1.5708, "spread": 0.7,
+  "life_min": 0.8, "life_max": 1.6,
+  "size_start": 6, "size_end": 1,
+  "color_start": "#ffd080ff", "color_end": "#ff300000",
+  "gravity": [0, -20], "drag": 0.8, "jitter": 14,
+  "spawn_shape": "ellipse", "spawn_area": [-6, -3, 12, 6],
+  "image": "ember.png", "atlas": "fx",
+  "layer": "foreground"
+}

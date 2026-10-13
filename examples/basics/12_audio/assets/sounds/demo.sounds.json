@@ -1,0 +1,8 @@
+{
+  "bus": "sfx",
+  "groups": {
+    "blip": {"file": "blip.wav", "variants": 3, "pitch_jitter": 0.06, "max_voices": 4},
+    "coin": {"files": ["coin.wav"], "bus": "ui", "pitch_jitter": 0, "min_interval_ms": 60},
+    "hum":  {"files": ["hum.wav"], "volume": 0.6, "pitch_jitter": 0, "max_voices": 2}
+  }
+}

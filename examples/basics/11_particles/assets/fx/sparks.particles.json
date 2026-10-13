@@ -1,0 +1,13 @@
+{
+  "capacity": 1024,
+  "burst": 48,
+  "speed_min": 60, "speed_max": 170,
+  "spread": 6.2832,
+  "life_min": 0.35, "life_max": 0.9,
+  "size_start": 2, "size_end": 1,
+  "color_start": "#fff4c0ff", "color_end": "#ff602000",
+  "gravity": [0, 260], "drag": 2.2,
+  "stretch": 0.025,
+  "sprite": "square",
+  "layer": "foreground"
+}

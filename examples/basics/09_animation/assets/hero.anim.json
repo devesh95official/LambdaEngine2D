@@ -1,0 +1,58 @@
+{
+ "sheet": "hero.json",
+ "start": "idle",
+ "clips": [
+  {
+   "name": "idle",
+   "tags": [
+    "idle",
+    "idle"
+   ]
+  },
+  {
+   "name": "run",
+   "tags": [
+    "run",
+    "run"
+   ]
+  },
+  {
+   "name": "attack",
+   "tags": [
+    "attack",
+    "attack"
+   ]
+  }
+ ],
+ "transitions": [
+  {
+   "from": "idle",
+   "to": "run",
+   "param": "moving",
+   "above": 0.5
+  },
+  {
+   "from": "run",
+   "to": "idle",
+   "param": "moving",
+   "below": 0.5
+  },
+  {
+   "from": "*",
+   "to": "attack",
+   "trigger": "attack"
+  },
+  {
+   "from": "attack",
+   "to": "idle",
+   "on_finish": true
+  }
+ ],
+ "events": [
+  {
+   "tag": "attack",
+   "frame": 1,
+   "name": "hit"
+  }
+ ]
+}

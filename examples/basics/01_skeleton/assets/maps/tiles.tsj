@@ -1,0 +1,57 @@
+{
+ "type": "tileset",
+ "version": "1.10",
+ "tiledversion": "1.10.2",
+ "name": "tiles",
+ "image": "tiles.png",
+ "imagewidth": 64,
+ "imageheight": 16,
+ "tilewidth": 16,
+ "tileheight": 16,
+ "tilecount": 4,
+ "columns": 4,
+ "margin": 0,
+ "spacing": 0,
+ "tiles": [
+  {
+   "id": 0,
+   "properties": [
+    {
+     "name": "shape",
+     "type": "string",
+     "value": "solid"
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "properties": [
+    {
+     "name": "shape",
+     "type": "string",
+     "value": "solid"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "properties": [
+    {
+     "name": "hazard",
+     "type": "bool",
+     "value": true
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "properties": [
+    {
+     "name": "shape",
+     "type": "string",
+     "value": "one_way"
+    }
+   ]
+  }
+ ]
+}

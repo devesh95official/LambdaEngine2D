@@ -1,0 +1,9 @@
+{
+  "name": "day",
+  "base": "base.palette.json",
+  "colors": {
+    "sky": "#87ceeb",
+    "grass": "#3c9a3c",
+    "sun": "#ffd84a"
+  }
+}
