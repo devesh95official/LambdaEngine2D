@@ -1,0 +1,4 @@
+{"bus": "sfx",
+ "groups": {
+  "hit": {"file": "hit.wav", "pitch_jitter": 0.08, "max_voices": 4}
+ }}

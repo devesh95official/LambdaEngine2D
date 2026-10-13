@@ -1,0 +1,29 @@
+; Grid Puzzle levels, in standard Sokoban text. One level per block; a blank line ends a level.
+;   #  wall      @  player      $  crate      .  goal      *  crate on a goal
+;   +  player on a goal         (space)  floor
+; Lines starting with ';' are comments. Keep each level a walled rectangle: the board is drawn
+; edge to edge. tests/test_rules.cpp solves every level here, so an impossible edit fails the test.
+; TODO(levels): replace these with your own.
+
+; 1. First push
+#######
+#     #
+# @$ .#
+#     #
+#######
+
+; 2. Side by side
+########
+#      #
+# .$$. #
+#  @   #
+#      #
+########
+
+; 3. Around the pillar
+########
+#  #   #
+# $  $ #
+#.@##. #
+#      #
+########

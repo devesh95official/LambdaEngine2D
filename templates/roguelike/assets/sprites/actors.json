@@ -1,0 +1,118 @@
+{
+ "frames": [
+  {
+   "filename": "player 0",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 16,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 16,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 16,
+    "h": 16
+   },
+   "duration": 450
+  },
+  {
+   "filename": "player 1",
+   "frame": {
+    "x": 16,
+    "y": 0,
+    "w": 16,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 16,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 16,
+    "h": 16
+   },
+   "duration": 350
+  },
+  {
+   "filename": "monster 0",
+   "frame": {
+    "x": 32,
+    "y": 0,
+    "w": 16,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 16,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 16,
+    "h": 16
+   },
+   "duration": 450
+  },
+  {
+   "filename": "monster 1",
+   "frame": {
+    "x": 48,
+    "y": 0,
+    "w": 16,
+    "h": 16
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 16,
+    "h": 16
+   },
+   "sourceSize": {
+    "w": 16,
+    "h": 16
+   },
+   "duration": 350
+  }
+ ],
+ "meta": {
+  "app": "tools/gen_assets.py",
+  "version": "1",
+  "image": "actors.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 64,
+   "h": 16
+  },
+  "scale": "1",
+  "frameTags": [
+   {
+    "name": "player",
+    "from": 0,
+    "to": 1,
+    "direction": "forward"
+   },
+   {
+    "name": "monster",
+    "from": 2,
+    "to": 3,
+    "direction": "forward"
+   }
+  ],
+  "slices": []
+ }
+}

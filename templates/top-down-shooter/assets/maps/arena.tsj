@@ -1,0 +1,15 @@
+{
+ "type": "tileset",
+ "version": "1.10",
+ "tiledversion": "1.10.2",
+ "name": "arena",
+ "image": "tiles.png",
+ "imagewidth": 80,
+ "imageheight": 16,
+ "tilewidth": 16,
+ "tileheight": 16,
+ "tilecount": 5,
+ "columns": 5,
+ "margin": 0,
+ "spacing": 0
+}

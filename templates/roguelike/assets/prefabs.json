@@ -1,0 +1,12 @@
+{"prefabs": {
+  "actor": {"components": {
+    "Transform": {}, "Sprite": {"layer": 64, "pivot": [0.5, 0.5]},
+    "GridPosition": {}, "GridMover": {"ticks": 6}, "TurnActor": {}}},
+  "player": {"extends": "actor", "tags": ["Player", "PlayerTurn"], "components": {
+    "Stats": {"hp": 30, "max_hp": 30, "attack": 4},
+    "Animator": {"sheet": "sprites/actors.json", "clip": "player"}}},
+  "monster": {"extends": "actor", "tags": ["FloorLocal"], "components": {
+    "TurnActor": {"speed": 90},
+    "Stats": {"hp": 6, "max_hp": 6, "attack": 2},
+    "Animator": {"sheet": "sprites/actors.json", "clip": "monster"}}}
+}}

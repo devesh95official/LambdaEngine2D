@@ -1,0 +1,12 @@
+{
+ "bus": "sfx",
+ "groups": {
+  "coin": {
+   "files": [
+    "coin.wav"
+   ],
+   "volume": 0.7,
+   "pitch_jitter": 0.05
+  }
+ }
+}

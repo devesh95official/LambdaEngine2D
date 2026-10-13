@@ -1,0 +1,26 @@
+{"prefabs": {
+  "player": {"tags": ["Player"], "components": {
+    "Transform": {}, "Velocity": {},
+    "Collider": {"half": [4, 4], "offset": [0, -5], "layer": 2, "mask": 4},
+    "TopDownMotor": {"max_speed": 100, "accel": 1400, "decel": 1800, "corner_assist": 5, "solid_mask": 1},
+    "Health": {"hp": 3, "max_hp": 3},
+    "Gun": {"fire_ticks": 10, "bullet_speed": 300},
+    "Sprite": {"layer": 64},
+    "Animator": {"sheet": "sprites/actors.json", "clip": "player"}}},
+
+  "enemy": {"components": {
+    "Transform": {}, "Velocity": {},
+    "Collider": {"half": [5, 5], "offset": [0, -5], "layer": 4, "mask": 2},
+    "TopDownMotor": {"max_speed": 40, "accel": 500, "decel": 600, "corner_assist": 4, "solid_mask": 1},
+    "Health": {"hp": 2, "max_hp": 2},
+    "Enemy": {"points": 10},
+    "Sprite": {"layer": 64},
+    "Animator": {"sheet": "sprites/actors.json", "clip": "enemy"}}},
+
+  "bullet": {"components": {
+    "Transform": {}, "Velocity": {},
+    "Projectile": {"radius": 2, "mask": 4, "pierce": 0, "stop_at_tiles": true},
+    "Lifetime": {"ticks": 60},
+    "Sprite": {"layer": 64, "pivot": [0.5, 0.5]},
+    "Animator": {"sheet": "sprites/actors.json", "clip": "bullet"}}}
+}}

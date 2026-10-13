@@ -1,0 +1,17 @@
+{"prefabs": {
+ "hero": {"tags": ["Player"], "components": {
+  "Transform": {}, "Velocity": {},
+  "Sprite": {"region": {"texture": "sprites/actors.png", "source": [0, 0, 16, 16], "size": [16, 16]}},
+  "Collider": {"half": [5, 7], "offset": [0, -7], "layer": 2},
+  "PlatformerMotor": {"run_speed": 110, "jump_speed": 280, "gravity": 900, "jump_cut": 0.5,
+                      "coyote_ticks": 6, "buffer_ticks": 6}}},
+ "coin": {"tags": ["Coin"], "components": {
+  "Transform": {},
+  "Sprite": {"region": {"texture": "sprites/actors.png", "source": [16, 0, 16, 16], "size": [16, 16]},
+             "pivot": [0.5, 0.5]},
+  "Collider": {"half": [5, 5], "trigger": true, "layer": 4, "mask": 2}}},
+ "goal": {"tags": ["Goal"], "components": {
+  "Transform": {},
+  "Sprite": {"region": {"texture": "sprites/actors.png", "source": [32, 0, 16, 32], "size": [16, 32]}},
+  "Collider": {"half": [6, 16], "offset": [0, -16], "trigger": true, "layer": 4, "mask": 2}}}
+}}

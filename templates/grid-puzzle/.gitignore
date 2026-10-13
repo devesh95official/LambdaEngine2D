@@ -1,0 +1,5 @@
+# Build folders and editor files. Kept here so a copied game starts with a working ignore list.
+build*/
+.cache/
+.DS_Store
+__pycache__/
