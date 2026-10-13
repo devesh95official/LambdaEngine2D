@@ -1,5 +1,7 @@
 # LambdaEngine2D
 
+[![CI](https://github.com/devesh95official/LambdaEngine2D/actions/workflows/ci.yml/badge.svg)](https://github.com/devesh95official/LambdaEngine2D/actions)
+
 A 2D engine for pixel-art games, written in C++20 on [raylib](https://www.raylib.com) 6.0. Game
 state lives in an ECS world; game code is plain functions (systems) run in fixed stages of a
 fixed-timestep loop. The simulation is deterministic: same binary, seed and input give the same
