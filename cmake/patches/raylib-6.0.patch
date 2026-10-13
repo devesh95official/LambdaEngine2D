@@ -1,0 +1,43 @@
+Local patch for raylib tag 6.0 (commit dbc56a87). Applied at fetch time with: patch -p1
+
+Hunk 1: upstream fix 7ee0b08 (PR #6040). An Android activity destroyed while unfocused
+        otherwise leaves the game thread blocked and the next launch hangs.
+Hunk 2: an ES 3 build asks EGL for an ES 3 context (6.0 always asks for 2).
+Hunk 3: upstream fix 1893226 (PR #6039). CloseAudioDevice() destroyed the mixing mutex while
+        the device's callback thread could still lock it.
+
+diff --git a/src/platforms/rcore_android.c b/src/platforms/rcore_android.c
+index f501fba..671d518 100644
+--- a/src/platforms/rcore_android.c
++++ b/src/platforms/rcore_android.c
+@@ -794,6 +794,7 @@ void PollInputEvents(void)
+         if (platform.app->destroyRequested != 0)
+         {
+             CORE.Window.shouldClose = true;
++            break;  // PATCH (upstream 7ee0b08, #6040): do not block again in ALooper_pollOnce(-1) after destroy
+         }
+     }
+ }
+@@ -946,7 +947,7 @@ static int InitGraphicsDevice(void)
+     };
+ 
+     const EGLint contextAttribs[] = {
+-        EGL_CONTEXT_CLIENT_VERSION, 2,
++        EGL_CONTEXT_CLIENT_VERSION, (rlGetVersion() == RL_OPENGL_ES_30)? 3 : 2,  // PATCH (local): request ES 3.0 context for GRAPHICS_API_OPENGL_ES3
+         EGL_NONE
+     };
+ 
+diff --git a/src/raudio.c b/src/raudio.c
+index f05567c..5cc02a1 100644
+--- a/src/raudio.c
++++ b/src/raudio.c
+@@ -532,8 +532,8 @@ void CloseAudioDevice(void)
+ {
+     if (AUDIO.System.isReady)
+     {
+-        ma_mutex_uninit(&AUDIO.System.lock);
+         ma_device_uninit(&AUDIO.System.device);
++        ma_mutex_uninit(&AUDIO.System.lock);  // PATCH (upstream 1893226, #6039): stop the device (joins its callback thread) before destroying the mutex it locks
+         ma_context_uninit(&AUDIO.System.context);
+ 
+         AUDIO.System.isReady = false;

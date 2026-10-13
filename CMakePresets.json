@@ -1,0 +1,35 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {"major": 3, "minor": 28, "patch": 0},
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": {
+        "FETCHCONTENT_BASE_DIR": "${sourceDir}/build/_deps_shared"
+      }
+    },
+    {"name": "debug", "inherits": "base", "cacheVariables": {"CMAKE_BUILD_TYPE": "Debug"}},
+    {"name": "release", "inherits": "base", "cacheVariables": {"CMAKE_BUILD_TYPE": "Release"}},
+    {"name": "relwithdebinfo", "inherits": "base", "cacheVariables": {"CMAKE_BUILD_TYPE": "RelWithDebInfo"}},
+    {"name": "asan", "inherits": "base", "cacheVariables": {"CMAKE_BUILD_TYPE": "Debug", "LAM_SANITIZE": "ON"}},
+    {"name": "ci", "inherits": "base", "cacheVariables": {"CMAKE_BUILD_TYPE": "Release", "LAM_WERROR": "ON"}},
+    {"name": "bench", "inherits": "base", "cacheVariables": {"CMAKE_BUILD_TYPE": "Release", "LAM_BUILD_BENCH": "ON", "LAM_PROFILE": "ON"}}
+  ],
+  "buildPresets": [
+    {"name": "debug", "configurePreset": "debug"},
+    {"name": "release", "configurePreset": "release"},
+    {"name": "relwithdebinfo", "configurePreset": "relwithdebinfo"},
+    {"name": "asan", "configurePreset": "asan"},
+    {"name": "ci", "configurePreset": "ci"},
+    {"name": "bench", "configurePreset": "bench"}
+  ],
+  "testPresets": [
+    {"name": "debug", "configurePreset": "debug", "output": {"outputOnFailure": true}},
+    {"name": "release", "configurePreset": "release", "output": {"outputOnFailure": true}},
+    {"name": "asan", "configurePreset": "asan", "output": {"outputOnFailure": true}},
+    {"name": "ci", "configurePreset": "ci", "output": {"outputOnFailure": true}}
+  ]
+}
